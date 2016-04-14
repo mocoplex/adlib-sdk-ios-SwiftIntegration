@@ -3,3 +3,7 @@
 
 개발환경
 - Xcode version 7.3 (7D175)
+- Swift v.2.2
+
+가이드 pdf 문서 v.1.0 업데이트 
+- adlib_swiftIntegration_guide.pdf
