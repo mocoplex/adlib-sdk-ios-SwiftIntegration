@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AdlibSDKSwiftSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBu-SY-9dJ">
+                                <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="TjY-ef-RMT"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9b-4Q-N6s">
+                                <rect key="frame" x="236" y="285" width="128" height="30"/>
+                                <state key="normal" title="Interstitial Request"/>
+                                <connections>
+                                    <action selector="actionButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jkq-Rx-tmk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="wBu-SY-9dJ" secondAttribute="bottom" id="CNg-V8-Rvi"/>
+                            <constraint firstAttribute="trailing" secondItem="wBu-SY-9dJ" secondAttribute="trailing" id="HP6-7I-G5T"/>
+                            <constraint firstItem="S9b-4Q-N6s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Sws-Ef-gSK"/>
+                            <constraint firstItem="wBu-SY-9dJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ly8-i4-a2w"/>
+                            <constraint firstItem="S9b-4Q-N6s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wTB-8e-Q22"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="adView" destination="wBu-SY-9dJ" id="rXq-mb-qmC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="537" y="460"/>
+        </scene>
+    </scenes>
+</document>
